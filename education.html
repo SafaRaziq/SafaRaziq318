@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFF5F2; /* Seafoam green */
+            margin: 0;
+            color: #2A4D69; /* Dark ocean blue */
+            text-align: center;
+        }
+        header {
+            background-color: #4ABDAC; /* Ocean blue-green */
+            color: white;
+            padding: 1.5em;
+        }
+        .container {
+            background-color: white;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            margin: 0;
+            color: #2A4D69;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .education-item {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .education-item h3 {
+            color: #4ABDAC;
+            font-size: 1.4em;
+        }
+        .degree, .institution, .date {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+        .date {
+            font-style: italic;
+            color: #666;
+        }
+        .description {
+            margin-top: 5px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4ABDAC;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .back-button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Ocean animated background */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            overflow: hidden;
+            z-index: -1;
+            animation: wave-background 5s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 20px; }
+        }
+        /* Footer Copyright */
+        .footer {
+            background-color: #4ABDAC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Ocean Background Effect -->
+    <div class="ocean"></div>
+
+    <header>
+        <h1>Education</h1>
+    </header>
+
+    <div class="container">
+        <h2>My Educational Journey</h2>
+
+        <div class="education-item">
+            <h3>Primary School</h3>
+            <span class="institution">Sekolah Kebangsaan Batu 9</span> - 
+            <span class="date">2010 - 2016</span>
+            <p class="description">
+                I attended primary school where I developed foundational skills in various subjects, made lasting friendships, and enjoyed participating in school events and activities.My UPSR result was not bad and i got 1A.
+            </p>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary School</h3>
+            <span class="institution">Sekolah Menengah Dato' Harun</span> - 
+            <span class="date">2017 - 2021</span>
+            <p class="description">
+                During secondary school, I focused on my studies and worked hard. My dedication paid off when I excelled in my SPM exams, achieving 3A's.
+            </p>
+        </div>
+
+        <div class="education-item">
+            <h3>Diploma</h3>
+            <span class="institution">UiTM Campus Rembau</span> - 
+            <span class="date">Ongoing</span>
+            <p class="description">
+                I am currently pursuing a Diploma in Information Management, where I am honing my skills in editing, handling various paperwork tasks, and developing my social skills. Through this program, I am learning to manage information efficiently, improve my attention to detail in editing, and enhance my communication abilities to interact effectively in professional environments.
+            </p>
+        </div>
+
+        <a href="myhomepagesafa.html" class="back-button">Back to Homepage</a>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>

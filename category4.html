@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #DFF5F2; /* Seafoam green */
+            margin: 0;
+            color: #2A4D69; /* Dark ocean blue */
+        }
+        h1 {
+            color: #2A4D69;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #4ABDAC;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #3A6073;
+            margin-bottom: 30px;
+        }
+        .container {
+            background-color: white;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 255px; /* Set fixed width */
+            height: 171px; /* Set fixed height */
+            object-fit: cover; /* Ensure image fits within the dimensions */
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4ABDAC;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .back-button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Ocean animated background */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            overflow: hidden;
+            z-index: -1;
+            animation: wave-background 5s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 20px; }
+        }
+        /* Footer Copyright */
+        .footer {
+            background-color: #4ABDAC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 50px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ocean"></div>
+    <h1>Internship Gallery</h1>
+
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="IMG4.1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.4.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.5.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.6.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.7.jpg" alt="Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="IMG4.8.jpg" alt="Image 8">
+            </div>
+        </div>
+
+        <a href="gallery.html" class="back-button">Back to Main Gallery</a>
+    </div>
+
+    
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>

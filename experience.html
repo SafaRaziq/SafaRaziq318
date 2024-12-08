@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #DFF5F2; /* Seafoam green */
+            margin: 0;
+            color: #2A4D69; /* Dark ocean blue */
+        }
+        header {
+            background-color: #4ABDAC;
+            color: white;
+            padding: 1.5em;
+        }
+        .container {
+            background-color: white;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            margin: 0;
+            color: #2A4D69;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .experience-item h3 {
+            color: #4ABDAC;
+            font-size: 1.4em;
+        }
+        .position, .date {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+        .date {
+            font-style: italic;
+            color: #666;
+        }
+        .description {
+            margin-top: 5px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4ABDAC;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .back-button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Ocean animated background */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            overflow: hidden;
+            z-index: -1;
+            animation: wave-background 5s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 20px; }
+        }
+        /* Fixed Footer (Copyright) */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #4ABDAC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ocean"></div>
+
+    <header>
+        <h1>Experience</h1>
+    </header>
+
+    <div class="container">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+            <h3>Internship</h3>
+            <span class="position">Majlis Perbandaran Kuala Selangor (MPKS)</span> - 
+            <span class="date">July 2024 - September 2024</span>
+            <p class="description">
+                Gained hands-on experience in local government operations, assisting with administrative tasks, document management, and community engagement programs. Learned the importance of effective teamwork and communication in public service.
+            </p>
+        </div>
+
+        <h2>Other Experience</h2>
+
+        <div class="experience-item">
+            <h3>Ramadan Bazaar Entrepreneur</h3>
+            <span class="position">Self-Employed</span> - 
+            <span class="date">2022</span>
+            <p class="description">
+                Collaborated with a friend to sell food at a Ramadan Bazaar. Developed skills in customer service, time management, and business planning, while gaining practical insights into small-scale entrepreneurship.
+            </p>
+        </div>
+
+        <a href="myhomepagesafa.html" class="back-button">Back to Homepage</a>
+    </div>
+
+    
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>

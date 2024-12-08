@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata </title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFF5F2; /* Seafoam green */
+            color: #2A4D69; /* Dark ocean blue */
+            margin: 0;
+            padding: 2em;
+        }
+        /* Ocean-themed header */
+        header {
+            background-color: #4ABDAC; /* Ocean blue */
+            color: white;
+            padding: 1.5em;
+            text-align: center;
+            border-bottom: 3px solid #337C7D; /* Darker accent */
+        }
+        h1 {
+            margin: 0;
+        }
+        /* Container with shadow and rounded corners */
+        .container {
+            background-color: white;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #4ABDAC;
+            border-bottom: 1px solid #DFF5F2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        .label {
+            font-weight: bold;
+        }
+        /* Back to Homepage Button with Floating Effect */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: white;
+            background-color: #4ABDAC;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            animation: float 3s ease-in-out infinite;
+        }
+        .back-button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Floating animation for button */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+        /* Wavy background effect */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            z-index: -1;
+            animation: wave-background 6s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 15px; }
+        }
+        /* Fixed Footer (Copyright) */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #4ABDAC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ocean"></div>
+
+    <header>
+        <h1>Biodata</h1>
+    </header>
+
+    <div class="container">
+        <h2>Personal Information</h2>
+        <div class="info-item">
+            <span class="label">Name:</span> Safa Muhammad Raziq Bin Abd Rafar
+        </div>
+        <div class="info-item">
+            <span class="label">Age:</span> 20
+        </div>
+        <div class="info-item">
+            <span class="label">Contact:</span> razziqrafar@gmail.com
+        </div>
+        <div class="info-item">
+            <span class="label">Phone:</span> (601) 117595889
+        </div>
+
+        <h2>About Me</h2>
+        <p>
+            My full name is Safa Muhammad Raziq Bin Abd Rafar, but most people know me simply as Safa. I was born in Tanjong Karang Hospital, which is where my journey began. Growing up, I was fortunate to be raised in a close-knit family environment in our hometown of Tanjong Karang, Selangor, where I still live with my parents.
+        </p>
+        <p>
+            In my family, I am the middle child of three siblings, which has given me a unique perspective, balancing both the responsibility of being an older sibling and learning from my older sibling. Family has always been a significant part of my life, and our bond is something I deeply value.
+        </p>
+        <p>
+            An interesting part of my background is that I also spent a portion of my childhood in Kulaijaya, Johor. Living there provided me with different experiences and broadened my understanding of life in Malaysia, shaping me in many ways.
+        </p>
+        
+        
+        <a href="myhomepagesafa.html" class="back-button">Back to Homepage</a>
+    </div>
+	
+    
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage by Safa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #DFF5F2; /* Seafoam green */
+            margin: 0;
+            overflow: hidden;
+            color: #2A4D69; /* Dark ocean blue */
+        }
+        h1 {
+            color: #2A4D69;
+            font-size: 2.5em;
+            margin-top: 5%;
+        }
+        p {
+            font-size: 1.2em;
+            color: #3A6073;
+            margin-bottom: 30px;
+        }
+        /* Ocean animated background */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            overflow: hidden;
+            z-index: -1;
+            animation: wave-background 5s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 20px; }
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .button {
+            text-decoration: none;
+            color: #DFF5F2;
+            background-color: #4ABDAC;
+            padding: 15px 20px;
+            border-radius: 30px;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Social links with floating effect */
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .social-links a {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+        /* Copyright Section */
+        .footer {
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 0.9em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ocean"></div>
+
+    <h1>Welcome to My Homepage</h1>
+    <p>Explore and learn more about me</p>
+    
+    <div class="button-container">
+        <a href="biodata.html" class="button">Biodata</a>
+        <a href="family.html" class="button">Family</a>
+        <a href="experience.html" class="button">Experience</a>
+        <a href="gallery.html" class="button">Gallery</a>
+        <a href="education.html" class="button">Education</a>
+        <a href="affiliate.html" class="button">Affiliate Links</a>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.tiktok.com/saapa._" target="_blank">
+            <img src="tiktok.jpg" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/saapa._" target="_blank">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFF5F2; /* Seafoam green for an ocean feel */
+            color: #2A4D69; /* Dark ocean blue */
+            margin: 0;
+            padding: 2em;
+        }
+        header {
+            background-color: #4ABDAC; /* Ocean blue */
+            color: white;
+            padding: 1.5em;
+            text-align: center;
+            border-bottom: 3px solid #337C7D; /* Darker accent */
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #4ABDAC;
+            border-bottom: 1px solid #DFF5F2;
+            padding-bottom: 5px;
+        }
+        .family-member {
+            margin-bottom: 20px;
+        }
+        .family-member h3 {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #4ABDAC;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+        .back-button:hover {
+            background-color: #337C7D;
+            transform: scale(1.05);
+        }
+        /* Floating animation for button */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+        /* Background effect */
+        .ocean {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #4ABDAC, #DFF5F2);
+            z-index: -1;
+            animation: wave-background 6s ease-in-out infinite alternate;
+        }
+        @keyframes wave-background {
+            from { background-position: 0 0; }
+            to { background-position: 0 15px; }
+        }
+        /* Fixed Footer (Copyright) */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #4ABDAC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ocean"></div>
+
+    <header>
+        <h1>Family</h1>
+    </header>
+
+    <div class="container">
+        <h2>My Family</h2>
+
+        <div class="family-member">
+            <h3>Father: Abd Rafar Bin Ab Rahim</h3>
+            <p class="description">
+                My father was born on December 15 in 1975 in Johor Bahru. He is the eldest of 3 siblings. My father likes to work on his own like a businessman and also used to be a courier. My father is a role model for me to be stronger every day because he is someone who works hard day after day.
+            </p>
+        </div>
+
+        <div class="family-member">
+            <h3>Mother: Sanisah Binti Amir Husin</h3>
+            <p class="description">
+                My mother was born on May 12 in 1980. She was born in Selangor and is the last child of 3 siblings. My mother is a housewife. She likes to cook and clean the house. My mother is also the best role model for me, because she never stops to pray for me and support my interests.
+            </p>
+        </div>
+
+        <div class="family-member">
+            <h3>Sister: Safa Nur Syafiqah Binti Abd Rafar</h3>
+            <p class="description">
+                My sister was born on 23 May in 2001. She was born in Selangor. She is currently working as a junior accountant. We share a close bond and support each other in everything.
+            </p>
+        </div>
+
+        <div class="family-member">
+            <h3>Little Sister: Safa Nursyazana Binti Abd Rafar</h3>
+            <p class="description">
+                My little sister was born on April 4, 2007. She was also born in Selangor. She loves drawing and has a vivid imagination, which brings so much joy and inspiration to our family.
+            </p>
+        </div>
+
+        <a href="myhomepagesafa.html" class="back-button">Back to Homepage</a>
+    </div>
+
+    
+    <div class="footer">
+        © 2024 Safa. All rights reserved.
+    </div>
+</body>
+</html>
